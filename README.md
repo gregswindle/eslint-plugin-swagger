@@ -49,6 +49,12 @@ Then configure the rules you want to use under the rules section.
 
 [Apache 2.0][license-url] :copyright: [Greg Swindle][author-url].
 
+---
 
-[license-url]: ./LICENSE
+[![Greenkeeper badge][greenkeeper-img]][greenkeeper-url]
+
+
 [author-url]: https://github.com/gregswindle
+[license-url]: ./LICENSE
+[greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg
+[greenkeeper-url]: https://greenkeeper.io/
