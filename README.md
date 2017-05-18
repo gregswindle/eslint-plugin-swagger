@@ -70,4 +70,4 @@ Then configure the rules you want to use under the rules section.
 [license-url]: ./LICENSE
 [greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg
 [greenkeeper-url]: https://greenkeeper.io/
-[rule-plural-paths-url]: './docs/rules/plural-paths.md'
+[rule-plural-paths-url]: ./docs/rules/plural-paths.md
