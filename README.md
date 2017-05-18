@@ -2,6 +2,18 @@
 
 > An extensible linter for Swagger/OpenAPI specifications.
 
+## Table of contents
+
+<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Supported Rules](#supported-rules)
+- [License](#license)
+
+<!-- /TOC -->
+
 ## Installation
 
 You'll first need to install [`ESLint`](http://eslint.org):
@@ -43,7 +55,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+* [`plural-paths`][rule-plural-paths-url]: Require API paths to use plural nouns for all resources
 
 ## License
 
@@ -58,3 +70,4 @@ Then configure the rules you want to use under the rules section.
 [license-url]: ./LICENSE
 [greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg
 [greenkeeper-url]: https://greenkeeper.io/
+[rule-plural-paths-url]: './docs/rules/plural-paths.md'
