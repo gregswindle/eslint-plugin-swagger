@@ -1,6 +1,6 @@
 # `eslint-plugin-swagger-tools`
 
-An extensible linter for Swagger/OpenAPI specifications.
+> An extensible linter for Swagger/OpenAPI specifications.
 
 ## Installation
 
