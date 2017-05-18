@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-swagger-tools",
+  "version": "0.0.0",
+  "description": "An extensible linter for Swagger/OpenAPI specifications.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Greg Swindle",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "eslint-json": "^2.0.0",
+    "lodash": "^4.17.4",
+    "pluralize": "^5.0.0",
+    "requireindex": "~1.1.0",
+    "yamljs": "^0.2.10"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^3.1.2"
+  },
+  "peerDependencies": {
+    "eslint": "~3.9.1"
+  },
+  "engines": {
+    "node": ">=6.x"
+  },
+  "license": "Apache-2.0"
+}
