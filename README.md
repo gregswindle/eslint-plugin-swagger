@@ -2,6 +2,8 @@
 
 > An extensible linter for Swagger/OpenAPI specifications.
 
+[![Build Status][travis-ci-img]][travis-ci-url]
+
 ## Table of contents
 
 <!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -71,3 +73,5 @@ Then configure the rules you want to use under the rules section.
 [greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg
 [greenkeeper-url]: https://greenkeeper.io/
 [rule-plural-paths-url]: ./docs/rules/plural-paths.md
+[travis-ci-img]: https://travis-ci.org/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop
+[travis-ci-url]: https://travis-ci.org/gregswindle/eslint-plugin-swagger-tools
