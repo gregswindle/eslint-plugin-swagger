@@ -1,5 +1,7 @@
 # `eslint-plugin-swagger-tools`
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg)](https://greenkeeper.io/)
+
 An extensible linter for Swagger/OpenAPI specifications.
 
 ## Installation
