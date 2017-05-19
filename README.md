@@ -65,7 +65,9 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-1. [`plural-paths`][rule-plural-paths-url]: Require API paths to use plural nouns for all resources.
+### 1. [`plural-paths`][rule-plural-paths-url]
+
+Require API paths to use plural nouns for all resources.
 
 ## License
 
