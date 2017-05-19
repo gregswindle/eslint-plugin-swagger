@@ -95,10 +95,10 @@ ruleTester.run("plural-paths", rule, {
             errors: [{
                 code: "var spec = {\"swagger\":\"2.0\",\"paths\":{\"/pets/{chipId}\":null}};"
             }]
-        },
-        {
-            code: JSON.stringify(spec.toString()),
-            errors: createExpectedErrorMessages()
         }
+        // {
+        //     code: JSON.stringify(spec.toString()),
+        //     errors: createExpectedErrorMessages()
+        // }
     ]
 });

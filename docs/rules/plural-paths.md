@@ -1,17 +1,19 @@
-# Require API paths to use plural nouns for all resources (plural-paths)
+# Require API paths to use plural nouns for all resources (`plural-paths`)
 
-Most resources model collections of data. Enforce consistent use of plural nouns for all resources.
+The `plural-paths` rule enforces consistent usage of plural nouns for all resources.
 
 
 ## Rule Details
 
-This rule aims to...
+This rule ensures that all resources within an API path use the plural case.
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
 /pet/{uuid}
+/store/{storeId}/inventory
+/user/{uuid}/order/{orderId}
 
 ```
 
@@ -20,8 +22,25 @@ Examples of **correct** code for this rule:
 ```js
 
 /pets/{uuid}
+/stores/{storeId}/inventory
+/users/{uuid}/orders/{orderId}
 
 ```
+
+> #### :mega: Parameters are not pluralized
+>
+> `Parameters` -- resources with dynamic values -- are not validated for plural case. For example, the following resource _literals_ are invalid:
+> ```
+>
+> /store/order/{orderId}
+> ```
+> Per style guidelines, the correct representation is
+> ```
+>
+> /stores/orders/{orderId}
+> ```
+> **Note that in both examples, the grammatical categorization of the  `{orderId}` parameter did not change.**
+
 
 ### Options
 

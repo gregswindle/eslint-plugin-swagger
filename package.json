@@ -59,9 +59,6 @@
       "text"
     ],
     "check-coverage": true,
-    "lines": 100,
-    "require": [
-      "babel-register"
-    ]
+    "lines": 100
   }
 }
