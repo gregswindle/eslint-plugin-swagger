@@ -41,9 +41,9 @@ GET /customers/d5e124d9/orders/1330334826/items
 
 Whether we use "dot" syntax or HTTP paths, we represent `customers` using the same words: we use a common _interface_. An interface simply allows us to reference lots of different data using the same terminology. Therefore, interfaces can be seen as collections of data with a common nomenclature. Given this point of view, many API developers have adopted the convention of referencing HTTP interfaces in the plural case.
 
-### Examples of **incorrect** code for this rule:
+### Examples of **incorrect** code for this rule
 
-The `plural-paths` rule throws an error whenever `swaggerApi.path` definitions use singular nouns instead of plural:
+:disappointed: The `plural-paths` rule throws an error whenever `swaggerApi.path` definitions use singular nouns instead of plural:
 
 ```js
 
@@ -55,7 +55,7 @@ The `plural-paths` rule throws an error whenever `swaggerApi.path` definitions u
 
 ### Examples of **correct** code for this rule
 
-The `plural-paths` rule validates `swaggerApi.paths` with resources that use the plural case:
+:satisfied: The `plural-paths` rule validates `swaggerApi.paths` with resources that use the plural case:
 
 ```js
 
