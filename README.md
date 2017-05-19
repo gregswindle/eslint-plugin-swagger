@@ -2,7 +2,7 @@
 
 > {•••} An extensible linter for Swagger/OpenAPI specifications.
 
-[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url]
+[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]
 
 ## Table of contents
 
@@ -20,7 +20,7 @@
 
 You'll first need to install [`ESLint`](http://eslint.org):
 
-```
+```bash
 
 $ npm i eslint --save-dev
 
@@ -28,7 +28,7 @@ $ npm i eslint --save-dev
 
 Next, install `eslint-plugin-swagger-tools`:
 
-```
+```bash
 
 $ npm install eslint-plugin-swagger-tools --save-dev
 
@@ -79,6 +79,8 @@ Then configure the rules you want to use under the rules section.
 [author-url]: https://github.com/gregswindle
 [codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
+[coveralls-img]: https://coveralls.io/repos/github/gregswindle/eslint-plugin-swagger-tools/badge.svg?branch=develop
+[coveralls-url]: https://coveralls.io/github/gregswindle/eslint-plugin-swagger-tools?branch=develop
 [inch-ci-img]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop&style=flat-square
 [inch-ci-url]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools
 [license-url]: ./LICENSE
