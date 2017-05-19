@@ -1,8 +1,8 @@
 # `eslint-plugin-swagger-tools`
 
-> An extensible linter for Swagger/OpenAPI specifications.
+> {•••} An extensible linter for Swagger/OpenAPI specifications.
 
-[![Readme Score][readme-score-img]][readme-score-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url]
+[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url]
 
 ## Table of contents
 
@@ -77,17 +77,17 @@ Then configure the rules you want to use under the rules section.
 
 
 [author-url]: https://github.com/gregswindle
-[codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989
+[codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
-[inch-ci-img]:
-[inch-ci-url]:
+[inch-ci-img]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop&style=flat-square
+[inch-ci-url]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools
 [license-url]: ./LICENSE
-[greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg
+[greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger-tools.svg?style=flat-square
 [greenkeeper-url]: https://greenkeeper.io/
 [nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
 [nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3
 [readme-score-img]: http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/gregswindle/eslint-plugin-swagger-tools
 [readme-score-url]: http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/eslint-plugin-swagger-tools
 [rule-plural-paths-url]: ./docs/rules/plural-paths.md
-[travis-ci-img]: https://travis-ci.org/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop
+[travis-ci-img]: https://travis-ci.org/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop&style=flat-square
 [travis-ci-url]:  https://travis-ci.org/gregswindle/eslint-plugin-swagger-tools

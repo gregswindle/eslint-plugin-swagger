@@ -2,6 +2,11 @@
   "name": "eslint-plugin-swagger-tools",
   "version": "0.0.0",
   "description": "An extensible linter for Swagger/OpenAPI specifications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregswindle/eslint-plugin-swagger-tools.git"
+  },
+  "bugs": "https://github.com/gregswindle/eslint-plugin-swagger-tools/issues",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -13,7 +18,7 @@
     "coverage": "./node_modules/.bin/nyc report",
     "coverage:coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
     "security": "./node_modules/.bin/nsp check --output summary",
-    "pretest": "./node_modules/.bin/eslint lib --fix",
+    "pretest": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js lib/** --fix",
     "test": "nyc mocha $(find tests -name '*.js')",
     "posttest": "./node_modules/.bin/nsp check --output summary"
   },
