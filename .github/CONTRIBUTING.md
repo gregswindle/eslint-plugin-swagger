@@ -2,11 +2,10 @@
 
 We're inner source and we encourage your contributions! Contributions include:
 
-1. Documenting failing tests
-2. Providing patches with tests
-3. Submitting defect reports
-4. Defining and refining problem statements
-5. Feature/enhancement requests
+1. [Submitting new issues][new-issue-url]
+2. Working on `Status: Available` issues
+3. Adding comments with details, documentation, or suggestions to any `Open` issue
+4. Requesting new features or enhancements
 
 ## 1. Create an issue to begin collaboration
 
@@ -14,12 +13,12 @@ We're inner source and we encourage your contributions! Contributions include:
 >
 > Besides, whenever you save a comment or an edit to an issue, the right stakeholders will be notified.
 
-
 Think of issues communal to-do list. If you notice something wrong, toss an issue in and collaborate to determine when -- or whether -- it will be resolved.
 
 ### 1.1. Defect (aka "bug") issues
 
-> :beetle: If you believe you've encountered a defect -- aka a _bug_ -- letting us know about it is a *huge* contribution. You can help by adding the following information as best you can.
+> #### 🏷️  `Type: Defect` reports
+> If you believe you've encountered a defect -- aka a _bug_ -- letting us know about it is a *huge* contribution. You can help by adding the following information as best you can.
 
 1.1.1. Screenshots with a description showing the problem.<br>
 1.1.2. Console or server logs<br>
@@ -34,23 +33,177 @@ The following things should always be included:
 
 ### 1.2. Feature Issues (aka, "Stories")
 
-> :book: Share what you'd like improved, or even new features that would make your life easier.
+> #### 🏷️  `Type: Feature` requests
+> Share what you'd like improved, or even new features that would make your life easier.
 
 If you'd like to see a new feature or enhancement:
 
 1.2.1. Open a new Issue.<br>
-1.2.2. Add the following text:
+1.2.2. Uncomment the "User Story" sections in the pre-populated issue template.
 
+#### Sample user story entry
 > ## User story
 > As a `role`,
 > I must/need/want/should `do something`
 > In order to `achieve business value`.
 
 > ## Acceptance criteria
-> 1.
-> 2.
-> 3.
-> 4.
+> 1. <br>
+> 2. <br>
+> 3. <br>
+> 4. <br>
+
+### 1.3. Issue labels
+
+Selecting accurate label(s) communicates vital information about an issue.
+
+#### 1.3.1. Labels by `Type` defined
+
+> #### :information_source: `Type` labels and Git commit conventions
+> This project enforces _[AngularJS Git Commit Guidelines][git-commit-guidelines-url]_ with [`commitplease`][commitplease-url] pre-commit hooks. This not only encourages succinct change logs, but also enables automated release management with [`semantic-release`][semantic-release-url].
+
+##### 1.3.1.1. 🏷️  `Type: Build`
+
+Issues related to product builds. The AngularJS Git commit message format is
+
+```
+
+build(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.2. 🏷️  `Type: Chore`
+
+Issues related to miscellaneous non-functional changes (usually "maintenance" changes). The AngularJS Git commit message format is
+
+```
+
+chore(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.3. 🏷️  `Type: CI`
+
+Issues related to continuous integration, delivery, and deployment tasks. The AngularJS Git commit message format is
+
+```
+
+ci(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.4. 🏷️  `Type: Docs`
+
+Issues related to continuous integration, delivery, and deployment tasks. The AngularJS Git commit message format is
+
+```
+
+ci(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.5. 🏷️  `Type: Feature`
+
+New feature or enhancement requests. The AngularJS Git commit message format is
+
+```
+
+feat(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.6. 🏷️  `Type: Fix`
+
+Defect (bug) repair issues. The AngularJS Git commit message format is
+
+```
+
+fix(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.7. 🏷️  `Type: Performance`
+
+Performance improvement issues. The AngularJS Git commit message format is
+
+```
+
+perf(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.8. 🏷️  `Type: Refactor`
+
+Source code design **improvements that do not affect product behavior**. The AngularJS Git commit message format is
+
+```
+
+refactor(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.9. 🏷️  `Type: Revert`
+
+Tasks that revert to a previous commit hash. The AngularJS Git commit message format is
+
+```
+
+revert(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.10. 🏷️  `Type: Style`
+
+Issues related to style guideline compliance, especially `ESLint` errors and warnings. The AngularJS Git commit message format is
+
+```
+
+style(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
+
+##### 1.3.1.11. 🏷️  `Type: Test`
+
+Test coverage tasks. The AngularJS Git commit message format is
+
+```
+
+test(<scope>): <subject>
+<BLANK LINE>
+<[body]>
+<BLANK LINE>
+<footer>
+```
 
 ## 2. Assignees
 
@@ -97,8 +250,7 @@ Add meaningful comments to the existing issue
 > TODO: list common style guidelines here.
 
 ### 5.2. Test your code
-W
-rite specs (i.e., unit tests). Behavior-driven development specifications are executable documentation. By the way, 100% code coverage is the norm, not the exception. :thumbs up:
+Write specs (i.e., unit tests). Behavior-driven development specifications are executable documentation. By the way, 100% code coverage is the norm, not the exception. :thumbs up:
 
 ### 5.3. Write _meaningful_ commit messages
 Above all else, source code repositories communicate change to your colleagues and your future self! Therefore, please
@@ -118,3 +270,8 @@ Thank you for contributing, and welcome to the community!
 ## 6. Related articles
 
 Related articles appear here based on the labels you select. Click to edit the macro and add or change labels.
+
+[commitplease-url]: https://www.npmjs.com/package/commitplease
+[git-commit-guidelines-url]: https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit
+[new-issue-url]: ../issues/new
+[semantic-release-url]: https://github.com/semantic-release/semantic-release

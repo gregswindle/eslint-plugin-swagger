@@ -69,6 +69,19 @@ Then configure the rules you want to use under the rules section.
 
 Require API paths to use plural nouns for all resources.
 
+## Contributors
+
+[Greg Swindle][https://github.com/gregswindle]
+
+### Contributing to `eslint-plugin-swagger-tools`
+
+We welcome contributions in the form of
+
+* Issues (feel free to peruse open issues or submit a new issue now)
+* Pull requests (PRs)
+
+[_Contributor Covenant Code of Conduct_][code-of-conduct-url]
+
 ## License
 
 [Apache 2.0][license-url] :copyright: [Greg Swindle][author-url].
@@ -81,6 +94,7 @@ Require API paths to use plural nouns for all resources.
 [author-url]: https://github.com/gregswindle
 [codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
+[code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
 [coveralls-img]: https://coveralls.io/repos/github/gregswindle/eslint-plugin-swagger-tools/badge.svg?branch=develop
 [coveralls-url]: https://coveralls.io/github/gregswindle/eslint-plugin-swagger-tools?branch=develop
 [inch-ci-img]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop&style=flat-square
