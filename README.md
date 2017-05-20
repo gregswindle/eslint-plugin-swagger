@@ -79,9 +79,9 @@ Require API paths to use plural nouns for all resources.
 ### Interested in contributing?
 :gift: Great! We warmly welcome contributions. Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
 
-Contributions begin, proceed, and end with:
- * Issues (feel free to [peruse open issues](./issues) or [create a new issue](./issues/new) now)
- * [Pull requests (PRs)](./pulls)
+Contributions have a beginning, middle, and end; their stories are told through:
+ * Issues (feel free to [peruse open issues][issues-url] or [create a new issue][issues-new-url] now)
+ * [Pull requests (PRs)][pr-url]
 
 ## License
 
@@ -93,6 +93,9 @@ Contributions begin, proceed, and end with:
 
 
 [author-url]: https://github.com/gregswindle
+[pr-url]: /gregswindle/eslint-plugin-swagger-tools/pulls
+[issues-url]: /gregswindle/eslint-plugin-swagger-tools/issues
+[issues-new-url]: /gregswindle/eslint-plugin-swagger-tools/issues/new
 [codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
 [code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
