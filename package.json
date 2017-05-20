@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-swagger-tools",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "An extensible linter for Swagger/OpenAPI specifications.",
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "security": "./node_modules/.bin/nsp check --output summary",
     "pretest": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js lib/** --fix",
     "test": "nyc mocha $(find tests -name '*.js')",
-    "posttest": "./node_modules/.bin/nsp check --output summary"
+    "posttest": "./node_modules/.bin/nsp check --output summary",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "eslint-json": "^2.0.0",
@@ -31,6 +32,7 @@
     "yamljs": "^0.2.10"
   },
   "devDependencies": {
+    "commitplease": "^2.7.10",
     "coveralls": "^2.13.1",
     "eslint": "~3.9.1",
     "eslint-json": "^2.0.0",
@@ -38,7 +40,9 @@
     "jsdoc": "^3.4.3",
     "mocha": "^3.1.2",
     "nsp": "^2.6.3",
-    "nyc": "^10.3.2"
+    "nyc": "^10.3.2",
+    "semantic-release-cli": "^3.0.3",
+    "semantic-release": "^6.3.6"
   },
   "peerDependencies": {
     "eslint": "~3.9.1"
