@@ -2,7 +2,8 @@
 
 > {•••} An extensible linter for Swagger/OpenAPI specifications.
 
-[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]
+[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
+[![NSP Status][nsp-img]][nsp-url] [![bitHound Dependencies][bithound-dep-img]][bithound-dep-url] [![bitHound Dev Dependencies][bithound-dev-dep-img]][bithound-dev-dep-url]
 
 ## Table of contents
 
@@ -102,6 +103,10 @@ Contributions have a beginning, middle, and end; their stories are told through:
 
 
 [author-url]: https://github.com/gregswindle
+[bithound-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/badges/dependencies.svg
+[bithound-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/develop/dependencies/npm
+[bithound-dev-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/badges/devDependencies.svg
+[bithound-dev-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/develop/dependencies/npm
 [pr-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/pulls
 [issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
 [issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
