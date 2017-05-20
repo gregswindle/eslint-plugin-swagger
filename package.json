@@ -2,6 +2,11 @@
   "name": "eslint-plugin-swagger-tools",
   "version": "0.0.0",
   "description": "An extensible linter for Swagger/OpenAPI specifications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregswindle/eslint-plugin-swagger-tools.git"
+  },
+  "bugs": "https://github.com/gregswindle/eslint-plugin-swagger-tools/issues",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -10,7 +15,13 @@
   "author": "Greg Swindle",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "coverage": "./node_modules/.bin/nyc report",
+    "coverage:coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
+    "git-issue-labels": "./node_modules/.bin/git-labelmaker",
+    "security": "./node_modules/.bin/nsp check --output summary",
+    "pretest": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js lib/** --fix",
+    "test": "nyc mocha $(find tests -name '*.js')",
+    "posttest": "./node_modules/.bin/nsp check --output summary"
   },
   "dependencies": {
     "eslint-json": "^2.0.0",
@@ -20,8 +31,14 @@
     "yamljs": "^0.2.10"
   },
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "~3.9.1",
-    "mocha": "^3.1.2"
+    "eslint-json": "^2.0.0",
+    "git-labelmaker": "^0.9.0",
+    "jsdoc": "^3.4.3",
+    "mocha": "^3.1.2",
+    "nsp": "^2.6.3",
+    "nyc": "^10.3.2"
   },
   "peerDependencies": {
     "eslint": "~3.9.1"
@@ -29,5 +46,21 @@
   "engines": {
     "node": ">=6.x"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "nyc": {
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "tests/**/*.js",
+      "**/*.spec.js",
+      "**/fixtures/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "check-coverage": true,
+    "lines": 100
+  }
 }

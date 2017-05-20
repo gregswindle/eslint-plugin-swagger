@@ -1,7 +1,6 @@
 module.exports = {
-    "parser": "esprima",
+    "parser": "espree",
     "env": {
-        "browser": true,
         "es6": true,
         "node": true,
         "mocha": true
@@ -29,6 +28,6 @@ module.exports = {
         ]
     },
     "plugins": [
-        "json"
+
     ]
 };
