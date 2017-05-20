@@ -1,11 +1,12 @@
-# Contributing to `generator-android-library`
+# Contributing to `eslint-plugin-swagger-tools`
 
 We're inner source and we encourage your contributions! Contributions include:
 
-1. [Submitting new issues][new-issue-url]
-2. Working on `Status: Available` issues
-3. Adding comments with details, documentation, or suggestions to any `Open` issue
-4. Requesting new features or enhancements
+1. Reporting defects (aka "bugs")
+2. Working on [`Status: Available` issues][label-status-available-url]
+3. Adding detailed comments, documentation, or suggestions to [`Open` issues][open-issues-url]
+4. [Requesting new features or enhancements][new-issue-url]
+5. [Submitting pull requests (PRs)][pr-url]
 
 ## 1. Create an issue to begin collaboration
 
@@ -273,5 +274,8 @@ Related articles appear here based on the labels you select. Click to edit the m
 
 [commitplease-url]: https://www.npmjs.com/package/commitplease
 [git-commit-guidelines-url]: https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit
+[label-status-available-url]: ../labels/Status%3A%20Available
 [new-issue-url]: ../issues/new
+[open-issues-url]: ../issues
+[pr-url]: ../pulls
 [semantic-release-url]: https://github.com/semantic-release/semantic-release

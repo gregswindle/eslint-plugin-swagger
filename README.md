@@ -71,16 +71,17 @@ Require API paths to use plural nouns for all resources.
 
 ## Contributors
 
-[Greg Swindle][https://github.com/gregswindle]
+[Greg Swindle](https://github.com/gregswindle)
 
 ### Contributing to `eslint-plugin-swagger-tools`
 
-We welcome contributions in the form of
+We openly welcome contributions! Contributions begin, proceed, and end with:
 
-* Issues (feel free to peruse open issues or submit a new issue now)
-* Pull requests (PRs)
+* Issues (feel free to [peruse open issues](./issues) or [create a new issue](./issues/new) now)
+* [Pull requests (PRs)](./pulls)
 
-[_Contributor Covenant Code of Conduct_][code-of-conduct-url]
+> #### :gift: Interested in contributing?
+> Great! Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
 
 ## License
 
