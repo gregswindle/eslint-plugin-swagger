@@ -6,15 +6,14 @@
 
 ## Table of contents
 
-<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported Rules](#supported-rules)
-	- [1. [`plural-paths`][rule-plural-paths-url]](#1-plural-pathsrule-plural-paths-url)
 - [Contributors](#contributors)
-	- [Interested in contributing?](#interested-in-contributing)
+- [Contributing to `eslint-plugin-swagger-tools`](#contributing-to-eslint-plugin-swagger-tools)
 - [License](#license)
 
 <!-- /TOC -->
@@ -41,6 +40,9 @@ $ npm install eslint-plugin-swagger-tools --save-dev
 
 ## Usage
 
+> ### :information_source: Swagger file extensions
+> `eslint-plugin-swagger-tools` evaluates Swagger files that have a `.json`, `.yaml`, or `.yml` file extension.
+
 Add `swagger-tools` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
@@ -66,6 +68,13 @@ Then configure the rules you want to use under the rules section.
 
 ```
 
+Finally, run `ESLint` against your Swagger documents.
+
+```bash
+
+$ eslint path/to/swagger/docs/** --fix
+```
+
 ## Supported Rules
 
 ### 1. [`plural-paths`][rule-plural-paths-url]
@@ -76,8 +85,8 @@ Require API paths to use plural nouns for all resources.
 
 [Greg Swindle](https://github.com/gregswindle)
 
-### Interested in contributing?
-:gift: Great! We warmly welcome contributions. Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
+## Contributing to `eslint-plugin-swagger-tools`
+:gift: We warmly welcome contributions. Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
 
 Contributions have a beginning, middle, and end; their stories are told through:
  * Issues (feel free to [peruse open issues][issues-url] or [create a new issue][issues-new-url] now)
@@ -93,9 +102,9 @@ Contributions have a beginning, middle, and end; their stories are told through:
 
 
 [author-url]: https://github.com/gregswindle
-[pr-url]: /gregswindle/eslint-plugin-swagger-tools/pulls
-[issues-url]: /gregswindle/eslint-plugin-swagger-tools/issues
-[issues-new-url]: /gregswindle/eslint-plugin-swagger-tools/issues/new
+[pr-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/pulls
+[issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
+[issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
 [codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
 [code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
