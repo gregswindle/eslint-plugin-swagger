@@ -12,6 +12,9 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported Rules](#supported-rules)
+	- [1. [`plural-paths`][rule-plural-paths-url]](#1-plural-pathsrule-plural-paths-url)
+- [Contributors](#contributors)
+	- [Interested in contributing?](#interested-in-contributing)
 - [License](#license)
 
 <!-- /TOC -->
@@ -73,15 +76,12 @@ Require API paths to use plural nouns for all resources.
 
 [Greg Swindle](https://github.com/gregswindle)
 
-### Contributing to `eslint-plugin-swagger-tools`
+### Interested in contributing?
+:gift: Great! We warmly welcome contributions. Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
 
-We openly welcome contributions! Contributions begin, proceed, and end with:
-
-* Issues (feel free to [peruse open issues](./issues) or [create a new issue](./issues/new) now)
-* [Pull requests (PRs)](./pulls)
-
-> #### :gift: Interested in contributing?
-> Great! Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
+Contributions begin, proceed, and end with:
+ * Issues (feel free to [peruse open issues](./issues) or [create a new issue](./issues/new) now)
+ * [Pull requests (PRs)](./pulls)
 
 ## License
 
