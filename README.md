@@ -2,16 +2,20 @@
 
 > {•••} An extensible linter for Swagger/OpenAPI specifications.
 
-[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![NSP Status][nsp-img]][nsp-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]
+[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
+[![NSP Status][nsp-img]][nsp-url] [![bitHound Dependencies][bithound-dep-img]][bithound-dep-url] [![bitHound Dev Dependencies][bithound-dev-dep-img]][bithound-dev-dep-url]
 
 ## Table of contents
 
-<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported Rules](#supported-rules)
+- [Contributors](#contributors)
+- [Contributing to `eslint-plugin-swagger-tools`](#contributing-to-eslint-plugin-swagger-tools)
+
 - [License](#license)
 
 <!-- /TOC -->
@@ -38,6 +42,9 @@ $ npm install eslint-plugin-swagger-tools --save-dev
 
 ## Usage
 
+> ### :information_source: Swagger file extensions
+> `eslint-plugin-swagger-tools` evaluates Swagger files that have a `.json`, `.yaml`, or `.yml` file extension.
+
 Add `swagger-tools` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
@@ -63,11 +70,29 @@ Then configure the rules you want to use under the rules section.
 
 ```
 
+Finally, run `ESLint` against your Swagger documents.
+
+```bash
+
+$ eslint path/to/swagger/docs/** --fix
+```
+
 ## Supported Rules
 
 ### 1. [`plural-paths`][rule-plural-paths-url]
 
 Require API paths to use plural nouns for all resources.
+
+## Contributors
+
+[Greg Swindle](https://github.com/gregswindle)
+
+## Contributing to `eslint-plugin-swagger-tools`
+:gift: We warmly welcome contributions. Check out our guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) with a friendly and respectful [Contributor Covenant Code of Conduct][code-of-conduct-url].
+
+Contributions have a beginning, middle, and end; their stories are told through:
+ * Issues (feel free to [peruse open issues][issues-url] or [create a new issue][issues-new-url] now)
+ * [Pull requests (PRs)][pr-url]
 
 ## License
 
@@ -79,8 +104,16 @@ Require API paths to use plural nouns for all resources.
 
 
 [author-url]: https://github.com/gregswindle
+[bithound-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/badges/dependencies.svg
+[bithound-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/develop/dependencies/npm
+[bithound-dev-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/badges/devDependencies.svg
+[bithound-dev-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger-tools/develop/dependencies/npm
+[pr-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/pulls
+[issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
+[issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
 [codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
 [codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger-tools&amp;utm_campaign=Badge_Grade
+[code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
 [coveralls-img]: https://coveralls.io/repos/github/gregswindle/eslint-plugin-swagger-tools/badge.svg?branch=develop
 [coveralls-url]: https://coveralls.io/github/gregswindle/eslint-plugin-swagger-tools?branch=develop
 [inch-ci-img]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools.svg?branch=develop&style=flat-square
