@@ -1,0 +1,163 @@
+[
+  {
+    "name": "no-circular-refs",
+    "description": "A definition/model's ancestor cannot be a descendant of said model. _(Circular Reference)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-definitions-without-refs",
+    "description": "Each referenceable definition must have references. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-ancestors",
+    "description": "A definition/model cannot declare a property that is already defined by one of its ancestors. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-auth-definition-refs",
+    "description": "Each authorization/security scope in an authorization/security definition should be unique. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-auth-scope-refs",
+    "description": "Each authorization/security reference should contain only unique scopes. _(Example: For an `oauth2` authorization/security requirement, when listing the required scopes, each scope should only be listed once.)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-name-type-pair",
+    "description": "Each operation parameter should have a unique `name` and type combination, where Swagger 1.2 uses the `paramType` property and in Swagger 2.0 uses the `in` property to indicate type. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-op-methods",
+    "description": "Each operation in an API should have a unique `method` property. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-paths",
+    "description": "Each defined operation path parameters must correspond to a named element in the API's path pattern. _(For example, you cannot have a path parameter named `id` for the following path `/pets/{petId}` but you must have a path parameter named `petId`.)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-resource-paths",
+    "description": "Each `resourcePath` should be unique for each API Declaration in the API. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-dup-response-message-code",
+    "description": "Each `code` in an operation's `responseMessages` should be unique. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-empty-requireds",
+    "description": "Each definition/model property listed in the `required` array must be defined in the `properties` of the model itself or one of its ancestors. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-form-and-body",
+    "description": "An operation cannot have a `form` or `formData` parameter if it has a `body` parameter ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-id-model-mismatch",
+    "description": "Each model's `id` property must match the corresponding key in the `models` section of the API Declaration. _(For example, a model with an id of `Person` should be found at the `Person` property in the API Declaration's `models` property and the `Person`'s `id` value must be `Person`.)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-multiple-inheritance",
+    "description": "Models are not allowed to descend from multiple models. _(Multiple Inheritance)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-path-verbs",
+    "description": "Prohibit verbs in API paths",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "no-undefined-ref-definition",
+    "description": "Each reference must point to an existing definition. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "operation-body",
+    "description": "Each operation should have only one parameter of type `body` ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "path-definition",
+    "description": "The Resource Listing has an API whose `path` is not defined in any of the API Declarations. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "require-array-items",
+    "description": "The `items` property is required for all schemas/definitions of type `array`. _(See [swagger-api/swagger-spec/issues/174](https://github.com/swagger-api/swagger-spec/issues/174))_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "require-default-value",
+    "description": "Every place where a default value can be provided, the default value must validate against the corresponding schema/definition. _(This is not handled by JSON Schema validators, at least not the one I am using, so we have to do this manually.  See [json-schema/JSON-Schema-Test-Suite/pull/67](https://github.com/json-schema/JSON-Schema-Test-Suite/pull/67))_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "require-path-definition",
+    "description": "For each API path parameter, all operations for the API path require corresponding path parameter definitions or the corresponding path parameter needs to be in the path's parameters. ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "require-plural-paths",
+    "description": "Require plural nouns in API paths",
+    "status": "Status: In Progress",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  },
+  {
+    "name": "require-unique-paths",
+    "description": "Each API `path` should be unique. _(For Swagger 1.2, this applies to both the Resource Listing and the API Declarations.  For all versions, being unique is both based on verbatim equality and equivalency.  Example: `/pets/{id}` and `/pets/{petId}` are equivalently the same but not the same verbatim.)_ ",
+    "status": "Status: Available",
+    "type": "Type: Feature",
+    "pluginElement": "ESLint: Rule"
+  }
+]

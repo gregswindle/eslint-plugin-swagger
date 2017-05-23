@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-swagger-tools",
   "version": "0.0.0-development",
-  "description": "An extensible linter for Swagger/OpenAPI specifications.",
+  "description": "An extensible linter with semantic validations for Swagger specifications.",
   "repository": {
     "type": "git",
     "url": "https://github.com/gregswindle/eslint-plugin-swagger-tools.git"
@@ -15,13 +15,14 @@
   "author": "Greg Swindle",
   "main": "lib/index.js",
   "scripts": {
-    "coverage": "./node_modules/.bin/nyc report",
-    "coverage:coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov",
+    "coverage:codacy": "cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage",
+    "coverage:coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "git-issue-labels": "./node_modules/.bin/git-labelmaker",
-    "security": "./node_modules/.bin/nsp check --output summary",
+    "security": "nsp check --output summary",
     "pretest": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js lib/** --fix",
     "test": "nyc mocha $(find tests -name '*.js')",
-    "posttest": "./node_modules/.bin/nsp check --output summary",
+    "posttest": "nsp check --output summary",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "yamljs": "^0.2.10"
   },
   "devDependencies": {
+    "codacy-coverage": "^2.0.2",
     "commitplease": "^2.7.10",
     "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
@@ -39,13 +41,11 @@
     "git-labelmaker": "^0.9.0",
     "jsdoc": "^3.4.3",
     "mocha": "^3.1.2",
+    "npm-install-peers": "^1.1.0",
     "nsp": "^2.6.3",
     "nyc": "^10.3.2",
-    "semantic-release-cli": "^3.0.3",
-    "semantic-release": "^6.3.6"
-  },
-  "peerDependencies": {
-    "eslint": "^3.19.0"
+    "semantic-release": "^6.3.6",
+    "semantic-release-cli": "^3.0.3"
   },
   "engines": {
     "node": ">=6.x"
@@ -56,6 +56,7 @@
       "lib/**/*.js"
     ],
     "exclude": [
+      ".scripts/**/*.js",
       "tests/**/*.js",
       "**/*.spec.js",
       "**/fixtures/**/*.js"
@@ -66,5 +67,22 @@
     ],
     "check-coverage": true,
     "lines": 100
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "build",
+      "ci",
+      "chore",
+      "revert"
+    ],
+    "scope": "\\S+.*"
   }
 }

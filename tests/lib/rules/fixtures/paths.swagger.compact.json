@@ -1,0 +1,1 @@
+{"swagger":"2.0","paths":{"/pet":null,"/pet/findByStatus":null,"/pet/findByTags":null,"/pet/{petId}":null,"/pet/{petId}/uploadImage":null,"/store/inventory":null,"/store/order":null,"/store/order/{orderId}":null,"/user":null,"/user/createWithArray":null,"/user/createWithList":null,"/user/login":null,"/user/logout":null,"/user/{username}":null}}
