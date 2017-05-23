@@ -88,7 +88,7 @@ $ eslint path/to/swagger/docs/** --fix
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
-| :heavy_check_mark: :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths. | In Progress<br>- [Issue #5](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/5) <br> - [PR #8](https://github.com/gregswindle/eslint-plugin-swagger-tools/pull/8) |
+| :heavy_check_mark: :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths. | Completed |
 
 ## Rules in backlog
 
