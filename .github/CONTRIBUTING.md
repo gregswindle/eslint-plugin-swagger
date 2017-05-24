@@ -21,6 +21,7 @@ Think of issues communal to-do list. If you notice something wrong, toss an issu
 > #### 🏷️  `Type: Defect` reports
 > If you believe you've encountered a defect -- aka a _bug_ -- letting us know about it is a *huge* contribution. You can help by adding the following information as best you can.
 
+
 1.1.1. Screenshots with a description showing the problem.<br>
 1.1.2. Console or server logs<br>
 1.1.3. Contact information of users who experienced this request<br>
@@ -37,12 +38,14 @@ The following things should always be included:
 > #### 🏷️  `Type: Feature` requests
 > Share what you'd like improved, or even new features that would make your life easier.
 
+
 If you'd like to see a new feature or enhancement:
 
 1.2.1. Open a new Issue.<br>
 1.2.2. Uncomment the "User Story" sections in the pre-populated issue template.
 
 #### Sample user story entry
+
 > ## User story
 > As a `role`,
 > I must/need/want/should `do something`
@@ -251,6 +254,7 @@ Add meaningful comments to the existing issue
 > TODO: list common style guidelines here.
 
 ### 5.2. Test your code
+
 Write specs (i.e., unit tests). Behavior-driven development specifications are executable documentation. By the way, 100% code coverage is the norm, not the exception. :thumbs up:
 
 ### 5.3. Write _meaningful_ commit messages
