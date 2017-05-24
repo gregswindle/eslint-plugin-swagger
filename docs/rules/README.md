@@ -1,82 +1,4 @@
-# `eslint-plugin-swagger`
-
-> {•••} An extensible linter with semantic validations for Swagger specifications.
-
-[![License][license-image]][license-url] [![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
-[![NSP Status][nsp-img]][nsp-url] [![bitHound Dependencies][bithound-dep-img]][bithound-dep-url] [![bitHound Dev Dependencies][bithound-dev-dep-img]][bithound-dev-dep-url]
-
-## Table of contents
-
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Supported rules](#supported-rules)
-- [Rules in backlog](#rules-in-backlog)
-- [Contributions](#contributions)
-- [License](#license)
-
-<!-- /TOC -->
-
-## Installation
-
-You'll first need to install [`ESLint`](http://eslint.org):
-
-```bash
-
-$ npm i eslint --save-dev
-
-```
-
-Next, install `eslint-plugin-swagger`:
-
-```bash
-
-$ npm install eslint-plugin-swagger --save-dev
-
-```
-
-**Note:** If you installed `ESLint` globally (using the `-g` flag) then you must also install `eslint-plugin-swagger` globally.
-
-## Usage
-
-> #### :information_source: Swagger file extensions
-> `eslint-plugin-swagger` evaluates Swagger files that have a `.json`, `.yaml`, or `.yml` file extension.
-
-Add `swagger-tools` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-
-```json
-
-{
-    "plugins": [
-        "swagger-tools"
-    ]
-}
-
-```
-
-
-Then configure the rules you want to use under the rules section.
-
-```json
-
-{
-    "rules": {
-        "swagger-tools/rule-name": 2
-    }
-}
-
-```
-
-Finally, run `ESLint` against your Swagger documents.
-
-```bash
-
-$ eslint path/to/swagger/docs/** --fix
-```
-
-## Supported rules
+# Supported rules
 
 > ###### `options` legend
 >
@@ -87,7 +9,7 @@ $ eslint path/to/swagger/docs/** --fix
 |:----------------:|:-----|:-----------|:-------|
 |  | [`no-dup-paths`][no-dup-paths-url] | Each API `path` should be unique.  | Completed |
 |  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
-| :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
+| :wrench: | [`require-plural-paths`][require-plural-paths-url] | Require plural nouns in API paths | Completed |
 
 ## Rules in backlog
 
@@ -124,51 +46,8 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 |  | [`require-default-value`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-default-value%29%3A%20Every%20place%20where%20a%20default...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | Every place where a default value can be provided, the default value must validate against the corresponding schema/definition. _(This is not handled by JSON Schema validators, at least not the one I am using, so we have to do this manually.  See [json-schema/JSON-Schema-Test-Suite/pull/67](https://github.com/json-schema/JSON-Schema-Test-Suite/pull/67))_  | Available |
 |  | [`require-path-definition`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-path-definition%29%3A%20For%20each%20API%20path%20parameter...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | For each API path parameter, all operations for the API path require corresponding path parameter definitions or the corresponding path parameter needs to be in the path's parameters.  | Available |
 
-## Contributions
-:family: We warmly welcome contributors. Check out the guidelines for [Contributing to `eslint-plugin-swagger`](./.github/CONTRIBUTING.md) and our [Contributor Covenant Code of Conduct][code-of-conduct-url].
-
-Contributions are stories with a beginning, a middle, and an end, all told through issues and pull requests.
- * [Peruse open issues][issues-url] or
- * [View rules in the backlog][rules-backlog-wiki-url]
- * [Open a new pull request (PR)][pr-url]
-
-## License
-
-[Apache 2.0][license-url] :copyright: [Greg Swindle][author-url].
-
----
-
-[![Greenkeeper badge][greenkeeper-img]][greenkeeper-url] [![StackShare][stackshare-img]][stackshare-url]
-
-[author-url]: https://github.com/gregswindle
-[bithound-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger/badges/dependencies.svg
-[bithound-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger/develop/dependencies/npm
-[bithound-dev-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger/badges/devDependencies.svg
-[bithound-dev-dep-url]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger/develop/dependencies/npm
-[codacy-img]: https://api.codacy.com/project/badge/Grade/554fe390431b455a87ba6acde3ff2989?style=flat-square
-[codacy-url]: https://www.codacy.com/app/greg_7/eslint-plugin-swagger?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gregswindle/eslint-plugin-swagger&amp;utm_campaign=Badge_Grade
 [code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
-[coveralls-img]: https://coveralls.io/repos/github/gregswindle/eslint-plugin-swagger/badge.svg?branch=develop
-[coveralls-url]: https://coveralls.io/github/gregswindle/eslint-plugin-swagger?branch=develop
 [eslint-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment
-[greenkeeper-img]: https://badges.greenkeeper.io/gregswindle/eslint-plugin-swagger.svg?style=flat-square
-[greenkeeper-url]: https://greenkeeper.io/
-[inch-ci-img]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger.svg?branch=develop&style=flat-square
-[inch-ci-url]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger
-[issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger/issues/new
-[issues-url]: https://github.com/gregswindle/eslint-plugin-swagger/issues
-[license-image]: https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square
-[license-url]: ./LICENSE
 [no-dup-paths-url]: ./docs/rules/no-dup-paths.md
 [no-path-verbs-url]: ./docs/rules/no-path-verbs.md
-[nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/2761fa76-bf1a-4e31-a642-679dfe55e575/badge
-[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/2761fa76-bf1a-4e31-a642-679dfe55e575
-[pr-url]: https://github.com/gregswindle/eslint-plugin-swagger/pulls
-[readme-score-img]: http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/gregswindle/eslint-plugin-swagger
-[readme-score-url]: http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/eslint-plugin-swagger
-[rule-plural-paths-url]: ./docs/rules/require-plural-paths.md
-[rules-backlog-wiki-url]: https://github.com/gregswindle/eslint-plugin-swagger/wiki/Rules-backlog
-[stackshare-img]: https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat
-[stackshare-url]: https://stackshare.io/gregswindle/eslint-plugin-swagger
-[travis-ci-img]: https://travis-ci.org/gregswindle/eslint-plugin-swagger.svg?branch=develop&style=flat-square
-[travis-ci-url]:  https://travis-ci.org/gregswindle/eslint-plugin-swagger
+[require-plural-paths-url]: ./docs/rules/require-plural-paths.md
