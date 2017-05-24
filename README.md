@@ -159,8 +159,8 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [license-url]: ./LICENSE
 [no-dup-paths-url]: ./docs/rules/no-dup-paths.md
 [no-path-verbs-url]: ./docs/rules/no-path-verbs.md
-[nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
-[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3
+[nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/2761fa76-bf1a-4e31-a642-679dfe55e575/badge
+[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/2761fa76-bf1a-4e31-a642-679dfe55e575
 [pr-url]: https://github.com/gregswindle/eslint-plugin-swagger/pulls
 [readme-score-img]: http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/gregswindle/eslint-plugin-swagger
 [readme-score-url]: http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/eslint-plugin-swagger
