@@ -88,8 +88,8 @@ $ eslint path/to/swagger/docs/** --fix
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
-| :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
 |  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
+| :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
 
 ## Rules in backlog
 
