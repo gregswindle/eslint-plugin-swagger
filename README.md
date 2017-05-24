@@ -13,7 +13,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported rules](#supported-rules)
-	- [Semantic validations](#semantic-validations)
 - [Rules in backlog](#rules-in-backlog)
 - [Contributions](#contributions)
 - [License](#license)
@@ -83,8 +82,6 @@ $ eslint path/to/swagger/docs/** --fix
 >
 > * :heavy_check_mark: The rule's log threshold can be extended or disabled
 > * :wrench: Supports the `--fix` command line option
-
-### Semantic validations
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
