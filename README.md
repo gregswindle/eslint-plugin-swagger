@@ -44,13 +44,13 @@ $ npm install eslint-plugin-swagger --save-dev
 > #### :information_source: Swagger file extensions
 > `eslint-plugin-swagger` evaluates Swagger files that have a `.json`, `.yaml`, or `.yml` file extension.
 
-Add `swagger-tools` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `swagger` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 
 {
     "plugins": [
-        "swagger-tools"
+        "swagger"
     ]
 }
 
@@ -63,7 +63,7 @@ Then configure the rules you want to use under the rules section.
 
 {
     "rules": {
-        "swagger-tools/rule-name": 2
+        "swagger/rule-name": 2
     }
 }
 
