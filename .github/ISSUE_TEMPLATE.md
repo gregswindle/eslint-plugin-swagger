@@ -2,9 +2,9 @@
 
 <!--- If you're suggesting a change/improvement, uncomment this block -->
 <!-- ## User story -->
-As an API producer and consumer,<br>
-I must/need/want/should {do something}<br>
-In order to {achieve business value}.<br>
+As an API producer and consumer,
+I must/need/want/should {do something}
+In order to {achieve business value}.
 
 <!--- Write each criterion in the present tense. Criteria should express the
       plugin's state once the ESLint: Rule's or ESLint: Processor's requirements
