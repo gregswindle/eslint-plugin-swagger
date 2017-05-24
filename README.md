@@ -136,7 +136,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 
 ---
 
-[![Greenkeeper badge][greenkeeper-img]][greenkeeper-url]
+[![Greenkeeper badge][greenkeeper-img]][greenkeeper-url] [![StackShare][stackshare-img]][stackshare-url]
 
 [author-url]: https://github.com/gregswindle
 [bithound-dep-img]: https://www.bithound.io/github/gregswindle/eslint-plugin-swagger/badges/dependencies.svg
@@ -166,5 +166,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [readme-score-url]: http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/eslint-plugin-swagger
 [rule-plural-paths-url]: ./docs/rules/require-plural-paths.md
 [rules-backlog-wiki-url]: https://github.com/gregswindle/eslint-plugin-swagger/wiki/Rules-backlog
+[stackshare-img]: https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat
+[stackshare-url]: https://stackshare.io/gregswindle/eslint-plugin-swagger
 [travis-ci-img]: https://travis-ci.org/gregswindle/eslint-plugin-swagger.svg?branch=develop&style=flat-square
 [travis-ci-url]:  https://travis-ci.org/gregswindle/eslint-plugin-swagger
