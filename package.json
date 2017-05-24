@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-swagger",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "An extensible linter with semantic validations for Swagger specifications.",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "pretest": "npm run eslint:html && npm run eslint:stylish",
     "test": "nyc mocha $(find tests -name '*.js')",
     "posttest": "nsp check --output default",
+    "release": "standard-version",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
@@ -48,7 +49,8 @@
     "nsp": "^2.6.3",
     "nyc": "^10.3.2",
     "semantic-release": "^6.3.6",
-    "semantic-release-cli": "^3.0.3"
+    "semantic-release-cli": "^3.0.3",
+    "standard-version": "^4.0.0"
   },
   "engines": {
     "node": ">=6.x"
