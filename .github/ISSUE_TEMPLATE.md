@@ -1,7 +1,7 @@
 <!--- Provide a general summary of the issue in the Title above -->
 
 <!--- If you're suggesting a change/improvement, uncomment this block -->
-<!-- ## User story -->
+## User story
 As an API producer and consumer,
 I must/need/want/should {do something}
 In order to {achieve business value}.
@@ -14,6 +14,14 @@ In order to {achieve business value}.
 - [ ] 2. {criterion-two}
 - [ ] 3. {criterion-three}
 - [ ] 4. {criterion-four}
+
+#### :zap: Rule developers _must_ use the `eslint:rule` subgenerator!
+> When you create a new rule, be sure to use the `eslint:rule` subgenerator, since it will
+> 1. Create a stubbed rule,
+> 2. The rule's stubbed BDD specs,
+> 3. As well as the rule's documentation.
+>
+> See [`eslint-plugin` development environment][eslint-plugin-dev-env-url] for details.
 
 <!-- DEFECTS -->
 <!--- If you're describing a bug, tell us what should happen -->
@@ -46,3 +54,5 @@ In order to {achieve business value}.
 * Environment name and version (e.g. Chrome 39, node.js 5.4):
 * Operating System and version (desktop or mobile):
 * Link to your project: -->
+
+[eslint-plugin-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment
