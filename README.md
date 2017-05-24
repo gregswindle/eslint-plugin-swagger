@@ -89,7 +89,7 @@ $ eslint path/to/swagger/docs/** --fix
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
 | :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
-|  | [`no-path-verbs`][no-path-verbs] | Prohibit verbs in api paths | In Progress |
+|  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
 
 ## Rules in backlog
 
@@ -159,7 +159,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
 [issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
 [license-url]: ./LICENSE
-[no-path-verbs]: ./docs/rules/no-path-verbs.md
+[no-path-verbs-url]: ./docs/rules/no-path-verbs.md
 [nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
 [nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3
 [pr-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/pulls
