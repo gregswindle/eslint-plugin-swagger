@@ -88,7 +88,8 @@ $ eslint path/to/swagger/docs/** --fix
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
-| :heavy_check_mark: :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths. | Completed |
+| :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
+|  | [`no-path-verbs`][no-path-verbs] | Prohibit verbs in api paths | In Progress |
 
 ## Rules in backlog
 
@@ -116,7 +117,6 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 |  | [`no-form-and-body`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28no-form-and-body%29%3A%20An%20operation%20cannot%20have%20a%20...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | An operation cannot have a `form` or `formData` parameter if it has a `body` parameter  | Available |
 |  | [`no-id-model-mismatch`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28no-id-model-mismatch%29%3A%20Each%20model%27s%20%60id%60%20property%20...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Each model's `id` property must match the corresponding key in the `models` section of the API Declaration. _(For example, a model with an id of `Person` should be found at the `Person` property in the API Declaration's `models` property and the `Person`'s `id` value must be `Person`.)_  | Available |
 |  | [`no-multiple-inheritance`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28no-multiple-inheritance%29%3A%20Models%20are%20not%20allowed%20to%20d...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Models are not allowed to descend from multiple models. _(Multiple Inheritance)_  | Available |
-|  | [`no-path-verbs`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28no-path-verbs%29%3A%20Prohibit%20verbs%20in%20API%20paths&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Prohibit verbs in API paths | Available |
 |  | [`no-undefined-ref-definition`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28no-undefined-ref-definition%29%3A%20Each%20reference%20must%20point%20t...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Each reference must point to an existing definition.  | Available |
 |  | [`operation-body`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28operation-body%29%3A%20Each%20operation%20should%20have%20...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Each operation should have only one parameter of type `body`  | Available |
 |  | [`path-definition`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28path-definition%29%3A%20The%20Resource%20Listing%20has%20an...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | The Resource Listing has an API whose `path` is not defined in any of the API Declarations.  | Available |
@@ -159,6 +159,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
 [issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
 [license-url]: ./LICENSE
+[no-path-verbs]: ./docs/rules/no-path-verbs.md
 [nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
 [nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3
 [pr-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/pulls

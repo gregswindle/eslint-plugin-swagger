@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# Reports, e.g., ESLint
+reports

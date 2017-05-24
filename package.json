@@ -18,11 +18,13 @@
     "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov",
     "coverage:codacy": "cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage",
     "coverage:coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "eslint:html": "./node_modules/.bin/eslint --quiet -c ./.eslintrc.js -o ./reports/eslint.html -f html --ext .json,.js,.yaml,.yml lib/**",
+    "eslint:stylish": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js,.yaml,.yml lib/** --fix",
     "git-issue-labels": "./node_modules/.bin/git-labelmaker",
     "security": "nsp check --output summary",
-    "pretest": "./node_modules/.bin/eslint -c ./.eslintrc.js --ext .json,.js lib/** --fix",
+    "pretest": "npm run eslint:html && npm run eslint:stylish",
     "test": "nyc mocha $(find tests -name '*.js')",
-    "posttest": "nsp check --output summary",
+    "posttest": "nsp check --output default",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
@@ -33,6 +35,7 @@
     "yamljs": "^0.2.10"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "codacy-coverage": "^2.0.2",
     "commitplease": "^2.7.10",
     "coveralls": "^2.13.1",

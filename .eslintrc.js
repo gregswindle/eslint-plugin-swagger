@@ -25,9 +25,12 @@ module.exports = {
         "semi": [
             "error",
             "always"
+        ],
+        "object-shorthand": [
+            "error"
         ]
     },
     "plugins": [
-        
+
     ]
 };
