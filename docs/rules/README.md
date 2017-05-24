@@ -48,6 +48,6 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 
 [code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
 [eslint-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment
-[no-dup-paths-url]: ./docs/rules/no-dup-paths.md
-[no-path-verbs-url]: ./docs/rules/no-path-verbs.md
-[require-plural-paths-url]: ./docs/rules/require-plural-paths.md
+[no-dup-paths-url]: ./no-dup-paths.md
+[no-path-verbs-url]: ./no-path-verbs.md
+[require-plural-paths-url]: ./require-plural-paths.md
