@@ -2,7 +2,7 @@
 
 > {•••} An extensible linter with semantic validations for Swagger specifications.
 
-[![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
+[![License][license-image]][license-url] [![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
 [![NSP Status][nsp-img]][nsp-url] [![bitHound Dependencies][bithound-dep-img]][bithound-dep-url] [![bitHound Dev Dependencies][bithound-dev-dep-img]][bithound-dev-dep-url]
 
 ## Table of contents
@@ -158,6 +158,8 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [inch-ci-url]: http://inch-ci.org/github/gregswindle/eslint-plugin-swagger-tools
 [issues-new-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
 [issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
+[license-image]: https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square
+[license-url]: ./LICENSE
 [license-url]: ./LICENSE
 [no-path-verbs-url]: ./docs/rules/no-path-verbs.md
 [nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
