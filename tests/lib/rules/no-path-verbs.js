@@ -30,13 +30,13 @@ ruleTester.run("no-path-verbs", rule, {
         {
             code: "var spec = {\"swagger\":\"2.0\",\"paths\":{\"/users/{id}/logout\":{\"get\":{\"operationId\":\"logoutUser\"}}}}",
             errors: [{
-                message: "Best Practices: no verbs in API paths"
+                message: "Best Practices: prohibit use of verbs in api paths."
             }]
         },
         {
             code: "var spec = {\"swagger\":\"2.0\",\"paths\":{\"/pets/addPet\":null}}",
             errors: [{
-                message: "Best Practices: no verbs in API paths"
+                message: "Best Practices: prohibit use of verbs in api paths."
             }]
         }
     ]

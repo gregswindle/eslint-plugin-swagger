@@ -85,6 +85,7 @@ $ eslint path/to/swagger/docs/** --fix
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
+|  | [`no-dup-paths`][no-dup-paths-url] | Each API `path` should be unique. <br><br><blockquote>For Swagger 1.2, this applies to both the Resource Listing and the API Declarations.  <br><br>For all versions, being unique is both based on verbatim equality and equivalency.  Example: `/pets/{id}` and `/pets/{petId}` are equivalently the same but not the same verbatim.</blockquote>  | In Progress<br>- Issue #4<br>- PR #10 |
 |  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
 | :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
 
@@ -120,7 +121,6 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 |  | [`require-array-items`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28require-array-items%29%3A%20The%20%60items%60%20property%20is%20req...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | The `items` property is required for all schemas/definitions of type `array`. _(See [swagger-api/swagger-spec/issues/174](https://github.com/swagger-api/swagger-spec/issues/174))_  | Available |
 |  | [`require-default-value`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28require-default-value%29%3A%20Every%20place%20where%20a%20default...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Every place where a default value can be provided, the default value must validate against the corresponding schema/definition. _(This is not handled by JSON Schema validators, at least not the one I am using, so we have to do this manually.  See [json-schema/JSON-Schema-Test-Suite/pull/67](https://github.com/json-schema/JSON-Schema-Test-Suite/pull/67))_  | Available |
 |  | [`require-path-definition`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28require-path-definition%29%3A%20For%20each%20API%20path%20parameter...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | For each API path parameter, all operations for the API path require corresponding path parameter definitions or the corresponding path parameter needs to be in the path's parameters.  | Available |
-|  | [`require-unique-paths`](https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new?title=feat%28require-unique-paths%29%3A%20Each%20API%20%60path%60%20should%20be%20u...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature) | Each API `path` should be unique. _(For Swagger 1.2, this applies to both the Resource Listing and the API Declarations.  For all versions, being unique is both based on verbatim equality and equivalency.  Example: `/pets/{id}` and `/pets/{petId}` are equivalently the same but not the same verbatim.)_  | Available |
 
 ## Contributions
 :family: We warmly welcome contributors. Check out the guidelines for [Contributing to `eslint-plugin-swagger-tools`](./.github/CONTRIBUTING.md) and our [Contributor Covenant Code of Conduct][code-of-conduct-url].
@@ -157,7 +157,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
 [issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues
 [license-image]: https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square
 [license-url]: ./LICENSE
-[license-url]: ./LICENSE
+[no-dup-paths-url]: ./docs/rules/no-dup-paths.md
 [no-path-verbs-url]: ./docs/rules/no-path-verbs.md
 [nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3/badge
 [nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/ebd8d503-2827-4444-a66e-c9b228bfa1c3
