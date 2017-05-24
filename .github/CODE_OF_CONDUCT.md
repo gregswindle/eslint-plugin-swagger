@@ -70,7 +70,7 @@ members of the project's leadership.
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available at [http://contributor-covenant.org/version/1/4][version].
 
-[team-email-mailto]: mailto:greg@swindle.net?Subject=%5Beslint-plugin-swagger-tools%5D%20Code%20of%20conduct%20concern
+[team-email-mailto]: mailto:greg@swindle.net?Subject=%5Beslint-plugin-swagger%5D%20Code%20of%20conduct%20concern
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
-[team-issues-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/issues/new
+[team-issues-url]: https://github.com/gregswindle/eslint-plugin-swagger/issues/new

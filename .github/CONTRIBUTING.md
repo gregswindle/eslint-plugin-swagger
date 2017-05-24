@@ -1,4 +1,4 @@
-# Contributing to `eslint-plugin-swagger-tools`
+# Contributing to `eslint-plugin-swagger`
 
 We're inner source and we encourage your contributions! Contributions include:
 

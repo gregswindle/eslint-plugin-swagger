@@ -1,12 +1,12 @@
 {
-  "name": "eslint-plugin-swagger-tools",
+  "name": "eslint-plugin-swagger",
   "version": "0.0.0-development",
   "description": "An extensible linter with semantic validations for Swagger specifications.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gregswindle/eslint-plugin-swagger-tools.git"
+    "url": "https://github.com/gregswindle/eslint-plugin-swagger.git"
   },
-  "bugs": "https://github.com/gregswindle/eslint-plugin-swagger-tools/issues",
+  "bugs": "https://github.com/gregswindle/eslint-plugin-swagger/issues",
   "keywords": [
     "eslint",
     "eslintplugin",

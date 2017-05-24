@@ -97,7 +97,7 @@ Disable this rule _only_ in cases of backwards compatibility.
 
 ## Version
 
-The `no-path-verbs` rule was introduced to `eslint-plugin-swagger-tools` in version `0.2.0`.
+The `no-path-verbs` rule was introduced to `eslint-plugin-swagger` in version `0.2.0`.
 
 ## Further Reading
 

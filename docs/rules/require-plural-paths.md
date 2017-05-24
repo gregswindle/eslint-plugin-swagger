@@ -95,7 +95,7 @@ Disable this rule if your product's style guidelines
 
 ## Version
 
-The `require-plural-paths` rule was introduced to `eslint-plugin-swagger-tools` in version `0.1.0`.
+The `require-plural-paths` rule was introduced to `eslint-plugin-swagger` in version `0.1.0`.
 
 ## Further Reading
 
@@ -110,8 +110,8 @@ The `require-plural-paths` rule was introduced to `eslint-plugin-swagger-tools` 
 * [RESTful API Design. Best Practices in a Nutshell: "Use Consistently Plural Nouns"][use-consistently-plural-nouns]
 * [RESTful API Design: plural nouns and concrete names][restful-api-design-url]
 
-[rule-source-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/blob/master/lib/rules/require-plural-paths.js
-[docs-source-url]: https://github.com/gregswindle/eslint-plugin-swagger-tools/blob/master/docs/rules/require-plural-paths.md
+[rule-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/lib/rules/require-plural-paths.js
+[docs-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/docs/rules/require-plural-paths.md
 [rest-api-tutorial-url]: http://www.restapitutorial.com/lessons/restfulresourcenaming.html#pluralization
 [restful-api-design-url]: https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names
 [use-consistently-plural-nouns]: https://blog.philipphauer.de/restful-api-design-best-practices/#use-consistently-plural-nouns
