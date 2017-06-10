@@ -2,22 +2,25 @@
  * @fileoverview Require API paths to use plural nouns for all resources
  * @author Greg Swindle
  */
-"use strict";
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-var { map } = require("lodash"),
-    rule = require("../../../lib/rules/require-plural-paths"),
-    fs = require("fs"),
-    spec = fs.readFileSync("tests/lib/fixtures/pet-store.swagger.json", "utf8"),
-    RuleTester = require("eslint").RuleTester;
-//------------------------------------------------------------------------------
-// Tests
-//------------------------------------------------------------------------------
+const fs = require("fs");
+const rule = require("../../../lib/rules/require-plural-paths");
+const spec = fs.readFileSync("tests/lib/fixtures/pet-store.swagger.json", "utf8");
+const { RuleTester } = require("eslint");
+const { map } = require("lodash");
+const ruleTester = new RuleTester();
 
-function createExpectedErrorMessages() {
+
+/**
+ * Helper function that creates expected error messages based on invalid paths.
+ *
+ * @returns {array<object>} A collection of error message objects.
+ */
+const createExpectedErrorMessages = () => {
     const paths = [{
         "invalid": "/pet",
         "valid": "/pets"
@@ -61,14 +64,18 @@ function createExpectedErrorMessages() {
         "invalid": "/user/{username}",
         "valid": "/users/{username}"
     }];
-    return map(paths, () => {
+    const mapErrMsg = function() {
         return {
             message: "Stylistic Issues: require plural nouns in API paths."
         };
-    });
-}
+    };
+    return map(paths, mapErrMsg);
+};
 
-const ruleTester = new RuleTester();
+//------------------------------------------------------------------------------
+// Tests
+//------------------------------------------------------------------------------
+
 ruleTester.run("require-plural-paths", rule, {
 
     valid: [{
