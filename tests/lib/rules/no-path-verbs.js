@@ -2,22 +2,19 @@
  * @fileoverview prohibit use of verbs in api paths
  * @author Greg Swindle
  */
-"use strict";
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/no-path-verbs"),
-
-    RuleTester = require("eslint").RuleTester;
-
+const { RuleTester } = require("eslint");
+const rule = require("../../../lib/rules/no-path-verbs");
+const ruleTester = new RuleTester();
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
 ruleTester.run("no-path-verbs", rule, {
 
     valid: [{

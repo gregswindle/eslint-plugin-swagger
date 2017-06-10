@@ -1,35 +1,56 @@
-"use strict";
-
 const semanticValidations = require("./semantic-validations");
 const { assign, map, reduce, sortBy, truncate } = require("lodash");
 const { bugs } = require("../../package");
-// const fs = require("fs");
 
-function addProps(defs) {
+/**
+ * Sorts rules by their { name } property.
+ * @private
+ * @param {array<object>} defs Collection of definitions
+ *
+ * @returns {array<object>} Sorted collection of rules.
+ */
+const sortRulesByName = function(defs) {
+    return sortBy(defs, ["name"]);
+};
+
+/**
+ * Automatically add issue labels to new Issues
+ * @private
+ * @param {array<object>} defs Collection of definitions.
+ *
+ * @returns {array<object>} Sorted collection of rules.
+ */
+const addProps = function(defs) {
     const props = {
         "status": "Status: Review Needed",
         "type": "Type: Feature",
         "pluginElement": "ESLint: Rule"
     };
-    const rules = map(defs, (def) => {
+    const assignProps = function(def) {
         return assign(def, props);
-    });
+    };
+    const rules = map(defs, assignProps);
     return sortRulesByName(rules);
-}
+};
 
-function updateDefs() {
+/**
+ * Update all definitions.
+ * @private
+ * @returns {string} JSON of definitions.
+ */
+const updateDefs = function() {
     const defs = JSON.stringify(addProps(semanticValidations), null, 2);
     return defs;
-    // fs.writeFile(__dirname + "/semantic-validations.json", (err) => {
-    //     console.error(err);
-    // });
-}
+};
 
-function sortRulesByName (defs) {
-    return sortBy(defs, ["name"]);
-}
-
-function createNewIssueLink(def) {
+/**
+ * Generate a hyperlink with query string params for auto-populating a new GitHub issue.
+ * @private
+ * @param {object} def Definition
+ *
+ * @returns {string} Markdown link.
+ */
+const createNewIssueLink = function(def) {
     const desc = truncate(`${def.description}`, 35).toLowerCase();
     const title = escape(`feat(${def.name}): ${desc}`);
     const labels = [
@@ -42,14 +63,19 @@ function createNewIssueLink(def) {
         return result;
     }, "");
     return `[\`${def.name}\`](${bugs}/new?title=${title}${qslabels})`;
-}
+};
 
-function defsToTableMd(defs) {
+/**
+ * Create a Markdown table of definitions.
+ * @private
+ * @param {array<object>} defs Collection of definitions.
+ *
+ * @returns {string} Markdown table.
+ */
+const defsToTableMd = function(defs) {
     const rules = sortRulesByName(defs);
-    let trs = map(rules, (def) => {
+    const trs = map(rules, (def) => {
         const link = createNewIssueLink(def);
-        // const {type, pluginElement, status} = def;
-        // const labels = `* ${type}<br> * ${pluginElement}<br> * ${status}`;
         return `|  | ${link} | ${def.description} | ${def.status.replace("Status: ", "")} |`;
     });
     const header = [
@@ -57,9 +83,7 @@ function defsToTableMd(defs) {
         "|:----------------:|:-----|:-----------|:------:|\n"
     ];
     return header.join("\n") + trs.join("\n");
-}
-
-// const tableMd = defsToTableMd(semanticValidations);
+};
 
 const backlog = {
     ruleDefinitions: {
@@ -67,7 +91,5 @@ const backlog = {
         update: updateDefs
     }
 };
-
-// console.log(backlog.ruleDefinitions.toMarkdownTable(semanticValidations));
 
 module.exports = backlog;

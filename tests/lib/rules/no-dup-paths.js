@@ -2,15 +2,14 @@
  * @fileoverview each API path should be unique
  * @author Greg Swindle
  */
-"use strict";
 
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/no-dup-paths"),
-    LintError = require("../../../lib/errors/lint-error"),
-    RuleTester = require("eslint").RuleTester;
+const LintError = require("../../../lib/errors/lint-error");
+const { RuleTester } = require("eslint");
+const rule = require("../../../lib/rules/no-dup-paths");
 
 
 //------------------------------------------------------------------------------

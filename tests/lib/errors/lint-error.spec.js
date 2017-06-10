@@ -1,5 +1,3 @@
-"use strict";
-
 const { expect } = require("chai");
 const LintError = require("../../../lib/errors/lint-error");
 
