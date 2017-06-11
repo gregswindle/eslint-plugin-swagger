@@ -6,6 +6,26 @@ Mature RESTful designs represent
 * **Resources** as **HTTP paths** and
 * **Operations** available for resources as **HTTP methods**.
 
+[:arrow_heading_up: Back to Rules README][rules-readme]
+
+## Table of contents
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Table of contents](#table-of-contents)
+- [Traditional, non-RESTful operations](#traditional-non-restful-operations)
+- [RESTful API verbs represented by HTTP method type](#restful-api-verbs-represented-by-http-method-type)
+- [Rule Details](#rule-details)
+	- [Examples of _incorrect_ code for this rule:](#examples-of-incorrect-code-for-this-rule)
+		- [Common verb violations](#common-verb-violations)
+		- [Paths that contain their `operation`'s name](#paths-that-contain-their-operations-name)
+	- [Examples of _correct_ code for this rule:](#examples-of-correct-code-for-this-rule)
+- [When Not To Use It](#when-not-to-use-it)
+- [Version](#version)
+- [Further Reading](#further-reading)
+
+<!-- /TOC -->
+
+
 ## Traditional, non-RESTful operations
 
 Traditional `RPC` and `SOAP` calls expose procedure and method calls for CRUD operations. When `RPC`s and `SOAP` rarely take HTTP method types into consideration beyond data exchange (e.g., sending data in HTTP request and response bodies).
@@ -105,7 +125,11 @@ The `no-path-verbs` rule was introduced to `eslint-plugin-swagger` in version `0
 * [Rule source][rule-src-url]
 * [Richardson Maturity Model: steps toward the glory of REST][rmm-url]
 
+---
+[:arrow_heading_up: Back to Rules README][rules-readme]
+
 [doc-src-url]: ./docs/rules/no-path-verbs.md
-[rule-src-url]: ./lib/rules/no-path-verbs.js
-[rmm-url]: https://martinfowler.com/articles/richardsonMaturityModel.html
 [rmm-level-2-url]: https://martinfowler.com/articles/richardsonMaturityModel.html#level2
+[rmm-url]: https://martinfowler.com/articles/richardsonMaturityModel.html
+[rule-src-url]: ./lib/rules/no-path-verbs.js
+[rules-readme]: ./docs/rules/README.md

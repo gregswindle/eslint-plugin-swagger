@@ -2,6 +2,23 @@
 
 > The `require-plural-paths` rule enforces consistent usage of plural nouns for all resources.
 
+[:arrow_heading_up: Back to Rules README][rules-readme]
+
+## Table of contents
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Table of contents](#table-of-contents)
+- [Rule Details](#rule-details)
+	- [Examples of **incorrect** code for this rule](#examples-of-incorrect-code-for-this-rule)
+	- [Examples of **correct** code for this rule](#examples-of-correct-code-for-this-rule)
+- [When Not To Use It](#when-not-to-use-it)
+- [Version](#version)
+- [Further Reading](#further-reading)
+	- [Sources](#sources)
+	- [Resources](#resources)
+
+<!-- /TOC -->
+
 ## Rule Details
 
 Mature RESTful designs represent
@@ -110,8 +127,13 @@ The `require-plural-paths` rule was introduced to `eslint-plugin-swagger` in ver
 * [RESTful API Design. Best Practices in a Nutshell: "Use Consistently Plural Nouns"][use-consistently-plural-nouns]
 * [RESTful API Design: plural nouns and concrete names][restful-api-design-url]
 
-[rule-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/lib/rules/require-plural-paths.js
+---
+
+[:arrow_heading_up: Back to Rules README][rules-readme]
+
 [docs-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/docs/rules/require-plural-paths.md
 [rest-api-tutorial-url]: http://www.restapitutorial.com/lessons/restfulresourcenaming.html#pluralization
 [restful-api-design-url]: https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names
+[rule-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/lib/rules/require-plural-paths.js
+[rules-readme]: ./docs/rules/README.md
 [use-consistently-plural-nouns]: https://blog.philipphauer.de/restful-api-design-best-practices/#use-consistently-plural-nouns
