@@ -5,21 +5,20 @@
 [![License][license-image]][license-url] [![Readme Score][readme-score-img]][readme-score-url] [![Inline docs][inch-ci-img]][inch-ci-url] [![Build Status][travis-ci-img]][travis-ci-url] [![Codacy Badge][codacy-img]][codacy-url] [![Coverage Status][coveralls-img]][coveralls-url]<br>
 [![NSP Status][nsp-img]][nsp-url] [![bitHound Dependencies][bithound-dep-img]][bithound-dep-url] [![bitHound Dev Dependencies][bithound-dev-dep-img]][bithound-dev-dep-url]
 
-## Table of contents
-
+## 1. Table of contents
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Supported rules](#supported-rules)
-- [Rules in backlog](#rules-in-backlog)
-- [Contributions](#contributions)
-- [License](#license)
+- [1. Table of contents](#1-table-of-contents)
+- [2. Installation](#2-installation)
+- [3. Usage](#3-usage)
+- [4. Supported rules](#4-supported-rules)
+- [5. Rules in backlog](#5-rules-in-backlog)
+- [6. Contributions](#6-contributions)
+- [7. License](#7-license)
 
 <!-- /TOC -->
 
-## Installation
+## 2. Installation
 
 You'll first need to install [`ESLint`](http://eslint.org):
 
@@ -39,7 +38,7 @@ $ npm install eslint-plugin-swagger --save-dev
 
 **Note:** If you installed `ESLint` globally (using the `-g` flag) then you must also install `eslint-plugin-swagger` globally.
 
-## Usage
+## 3. Usage
 
 > #### :information_source: Swagger file extensions
 > `eslint-plugin-swagger` evaluates Swagger files that have a `.json`, `.yaml`, or `.yml` file extension.
@@ -76,7 +75,7 @@ Finally, run `ESLint` against your Swagger documents.
 $ eslint path/to/swagger/docs/** --fix
 ```
 
-## Supported rules
+## 4. Supported rules
 
 > ###### `options` legend
 >
@@ -89,7 +88,7 @@ $ eslint path/to/swagger/docs/** --fix
 |  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
 | :wrench: | [`require-plural-paths`][rule-plural-paths-url] | Require plural nouns in API paths | Completed |
 
-## Rules in backlog
+## 5. Rules in backlog
 
 The product backlog has lots of lonely `rules` looking for love from nice contributors like you. :kissing_heart: If you're interested, please:
 
@@ -124,7 +123,7 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 |  | [`require-default-value`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-default-value%29%3A%20Every%20place%20where%20a%20default...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | Every place where a default value can be provided, the default value must validate against the corresponding schema/definition. _(This is not handled by JSON Schema validators, at least not the one I am using, so we have to do this manually.  See [json-schema/JSON-Schema-Test-Suite/pull/67](https://github.com/json-schema/JSON-Schema-Test-Suite/pull/67))_  | Available |
 |  | [`require-path-definition`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-path-definition%29%3A%20For%20each%20API%20path%20parameter...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | For each API path parameter, all operations for the API path require corresponding path parameter definitions or the corresponding path parameter needs to be in the path's parameters.  | Available |
 
-## Contributions
+## 6. Contributions
 :family: We warmly welcome contributors. Check out the guidelines for [Contributing to `eslint-plugin-swagger`](./.github/CONTRIBUTING.md) and our [Contributor Covenant Code of Conduct][code-of-conduct-url].
 
 Contributions are stories with a beginning, a middle, and an end, all told through issues and pull requests.
@@ -132,7 +131,7 @@ Contributions are stories with a beginning, a middle, and an end, all told throu
  * [View rules in the backlog][rules-backlog-wiki-url]
  * [Open a new pull request (PR)][pr-url]
 
-## License
+## 7. License
 
 [Apache 2.0][license-url] :copyright: [Greg Swindle][author-url].
 
