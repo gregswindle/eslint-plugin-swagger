@@ -132,4 +132,4 @@ The `no-path-verbs` rule was introduced to `eslint-plugin-swagger` in version `0
 [rmm-level-2-url]: https://martinfowler.com/articles/richardsonMaturityModel.html#level2
 [rmm-url]: https://martinfowler.com/articles/richardsonMaturityModel.html
 [rule-src-url]: ./lib/rules/no-path-verbs.js
-[rules-readme]: ./docs/rules/README.md
+[rules-readme]: ./README.md

@@ -135,5 +135,5 @@ The `require-plural-paths` rule was introduced to `eslint-plugin-swagger` in ver
 [rest-api-tutorial-url]: http://www.restapitutorial.com/lessons/restfulresourcenaming.html#pluralization
 [restful-api-design-url]: https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names
 [rule-source-url]: https://github.com/gregswindle/eslint-plugin-swagger/blob/master/lib/rules/require-plural-paths.js
-[rules-readme]: ./docs/rules/README.md
+[rules-readme]: ./README.md
 [use-consistently-plural-nouns]: https://blog.philipphauer.de/restful-api-design-best-practices/#use-consistently-plural-nouns

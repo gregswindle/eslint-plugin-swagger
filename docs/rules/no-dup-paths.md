@@ -112,5 +112,5 @@ The `no-dup-paths` rule was introduced to `eslint-plugin-swagger` in version `0.
 [doc-src-url]: ./docs/rules/no-dup-paths.md
 [rule-specs-url]: ./tests/lib/rules/no-dup-paths.js
 [rule-src-url]: ./lib/rules/no-dup-paths.js
-[rules-readme]: ./docs/rules/README.md
+[rules-readme]: ./README.md
 [uuid-def-url]: https://en.wikipedia.org/wiki/Universally_unique_identifier
