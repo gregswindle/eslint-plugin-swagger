@@ -7,9 +7,9 @@
 
 | `options`        | Rule | Description| Status |
 |:----------------:|:-----|:-----------|:-------|
-|  | [`no-dup-paths`][no-dup-paths-url] | Each API `path` should be unique.  | Completed |
-|  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed |
-| :wrench: | [`require-plural-paths`][require-plural-paths-url] | Require plural nouns in API paths | Completed |
+|  | [`no-dup-paths`][no-dup-paths-url] | Each API `path` should be unique.  | Completed in [`v0.1.0`][changelog-v0.1.0-url] |
+|  | [`no-path-verbs`][no-path-verbs-url] | Prohibit verbs in api paths | Completed in [`v0.1.0`][changelog-v0.1.0-url] |
+| :wrench: | [`require-plural-paths`][require-plural-paths-url] | Require plural nouns in API paths | Completed in [`v0.1.0`][changelog-v0.1.0-url] |
 
 ## Rules in backlog
 
@@ -46,6 +46,7 @@ The product backlog has lots of lonely `rules` looking for love from nice contri
 |  | [`require-default-value`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-default-value%29%3A%20Every%20place%20where%20a%20default...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | Every place where a default value can be provided, the default value must validate against the corresponding schema/definition. _(This is not handled by JSON Schema validators, at least not the one I am using, so we have to do this manually.  See [json-schema/JSON-Schema-Test-Suite/pull/67](https://github.com/json-schema/JSON-Schema-Test-Suite/pull/67))_  | Available |
 |  | [`require-path-definition`](https://github.com/gregswindle/eslint-plugin-swagger/issues/new?title=feat%28require-path-definition%29%3A%20For%20each%20API%20path%20parameter...&labels[]=ESLint%3A%20Rule&labels[]=Status%3A%20Available&labels[]=Type%3A%20Feature&labels[]=Type%3A%20Docs) | For each API path parameter, all operations for the API path require corresponding path parameter definitions or the corresponding path parameter needs to be in the path's parameters.  | Available |
 
+[changelog-v0.1.0-url]: ../../CHANGELOG.md#0.1.0
 [code-of-conduct-url]: ./.github/CODE_OF_CONDUCT.md
 [eslint-dev-env-url]: http://eslint.org/docs/developer-guide/development-environment
 [no-dup-paths-url]: ./no-dup-paths.md
