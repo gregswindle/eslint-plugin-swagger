@@ -44,7 +44,7 @@
     "eslint-json": "^2.0.0",
     "eslint-plugin-security": "^1.3.0",
     "git-labelmaker": "^0.9.0",
-    "jsdoc": "^3.4.3",
+    "jsdoc": "3.4.3",
     "mocha": "^3.1.2",
     "npm-install-peers": "^1.1.0",
     "nsp": "^2.6.3",
