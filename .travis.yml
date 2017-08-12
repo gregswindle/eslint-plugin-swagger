@@ -1,7 +1,7 @@
 language: node_js
-cache:
-  directories:
-    - node_modules
+# cache:
+#   directories:
+#     - node_modules
 notifications:
   email: false
 node_js:
@@ -13,7 +13,7 @@ before_script:
 script:
   - npm test
   - npm run coverage
-  - npm run coverage:codacy
+  # - npm run coverage:codacy
   - npm run coverage:coveralls
 after_success:
   - npm run semantic-release
