@@ -42,7 +42,7 @@
     "commitplease": "^2.7.10",
     "coveralls": "^2.13.1",
     "eslint-plugin-security": "^1.4.0",
-    "jsdoc": "^3.4.3",
+    "jsdoc": "^3.5.5",
     "mocha": "^3.4.2",
     "npm-install-peers": "^1.1.0",
     "nsp": "^2.6.3",
