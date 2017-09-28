@@ -40,7 +40,7 @@
     "chai": "^4.0.2",
     "codacy-coverage": "^2.0.2",
     "commitplease": "^2.7.10",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.0",
     "eslint-plugin-security": "^1.4.0",
     "jsdoc": "^3.4.3",
     "mocha": "^3.4.2",
