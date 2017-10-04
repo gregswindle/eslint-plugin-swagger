@@ -44,7 +44,7 @@
     "eslint-plugin-security": "^1.4.0",
     "jsdoc": "^3.4.3",
     "mocha": "^3.4.2",
-    "npm-install-peers": "^1.1.0",
+    "npm-install-peers": "^1.2.0",
     "nsp": "^2.6.3",
     "nyc": "^11.0.3",
     "semantic-release": "^6.3.6",
