@@ -49,7 +49,7 @@
     "nyc": "^11.0.3",
     "semantic-release": "^6.3.6",
     "semantic-release-cli": "^3.0.3",
-    "standard-version": "^4.2.0"
+    "standard-version": "^4.3.0"
   },
   "engines": {
     "node": ">=6.x"
