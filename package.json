@@ -48,7 +48,7 @@
     "nsp": "^2.6.3",
     "nyc": "^11.0.3",
     "semantic-release": "^6.3.6",
-    "semantic-release-cli": "^3.0.3",
+    "semantic-release-cli": "^3.5.0",
     "standard-version": "^4.2.0"
   },
   "engines": {
