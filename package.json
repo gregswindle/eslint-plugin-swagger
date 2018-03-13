@@ -46,7 +46,7 @@
     "mocha": "^3.4.2",
     "npm-install-peers": "^1.1.0",
     "nsp": "^2.6.3",
-    "nyc": "^11.0.3",
+    "nyc": "^11.6.0",
     "semantic-release": "^6.3.6",
     "semantic-release-cli": "^3.0.3",
     "standard-version": "^4.2.0"
