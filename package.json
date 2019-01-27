@@ -29,26 +29,26 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
-    "eslint": "^4.1.1",
+    "eslint": "^5.12.1",
     "eslint-json": "^2.0.0",
     "lodash": "^4.17.4",
-    "pluralize": "^5.0.0",
-    "requireindex": "~1.1.0",
+    "pluralize": "^7.0.0",
+    "requireindex": "~1.2.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "chai": "^4.0.2",
-    "codacy-coverage": "^2.0.2",
-    "commitplease": "^2.7.10",
-    "coveralls": "^2.13.1",
+    "codacy-coverage": "^3.4.0",
+    "commitplease": "^3.2.0",
+    "coveralls": "^3.0.2",
     "eslint-plugin-security": "^1.4.0",
     "jsdoc": "^3.4.3",
-    "mocha": "^3.4.2",
+    "mocha": "^5.2.0",
     "npm-install-peers": "^1.1.0",
-    "nsp": "^2.6.3",
-    "nyc": "^11.0.3",
-    "semantic-release": "^6.3.6",
-    "semantic-release-cli": "^3.0.3",
+    "nsp": "^3.2.1",
+    "nyc": "^13.1.0",
+    "semantic-release": "^15.13.3",
+    "semantic-release-cli": "^4.1.0",
     "standard-version": "^4.2.0"
   },
   "engines": {
